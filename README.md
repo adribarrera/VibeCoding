@@ -28,3 +28,52 @@ Cambios en los coches:
 	
 	Para ampliar el contenido, puedes recopilar información contrastada.
 
+---
+
+## Segundo prompt:
+Debes añadir una sección al final del todo llamada pilotos. Esta sección debe mantener el estilo de la web, detallado anteriormente. En la carpeta del proyecto, en assets, encontrarás una carpeta llamada Pilotos y otra llamada Equipos. Ahí encontrarás las imágenes de los pilotos y los equipos para asociarlos.
+
+La sección debe agrupar los pilotos por equipos. Algunas imágenes tienen distinto tamaño, así que asegúrate ajustarlas para que quede todo bien estructurado y organizado. La estructura de cada equipo es la siguiente: 
+- Arriba en el centro: logo del equipo
+- Justo debajo: los dos pilotos que conforman el equipo, centrados, con buena proporción y efecto liquid glass de fondo.
+
+- Justo debajo de la imagen del piloto: un recuadro que siga la línea de la página con el nombre del piloto. No debe haber saltos de línea si no cupiera el nombre del piloto, por lo que debes ajustarlo. Este recuadro tendrá un color de fondo relacionado con el equipo. A continuación los colores y las asignaciones de pilotos.
+
+Colores de recuadro de pilotos:
+Ferrari: Rojo característico. Texto blanco
+
+Mercedes: Verde petróleo. Texto negro
+
+Red Bull: Azul oscuro. Texto amarillo (no demasiado fuerte)
+
+McLaren: Naranja. Texto negro
+
+Aston Martin: Verde. Texto blanco
+
+Williams: Azul. Texto blanco
+
+Alpine: Rosa. Texto azul
+
+Haas: Blanco. Texto rojo
+
+Racing Bulls: Blanco. Texto azul
+
+Audi: Plata. Texto naranja (no demasiado claro)
+
+Cadillac: Negro. Texto blanco
+
+
+Asignación piloto-equipo:
+McLaren: Lando Norris, Oscar Piastri
+Red Bull: Max Verstappen, Isack Hadjar
+Mercedes: George Russell, Kimi Antonelli
+Ferrari: Charles Leclerc, Lewis Hamilton
+Williams: Alex Albon, Carlos Sainz
+Aston Martin: Fernando Alonso, Lance Stroll
+Racing Bulls: Liam Lawson, Arvid Lindblad
+Haas: Oliver Bearman, Esteban Ocon
+Alpine: Pierre Gasly, Franco Colapinto
+Audi: Nico Hülkenberg, Gabriel Bortoleto
+Cadillac: Checo Pérez, Valtteri Bottas
+
+
