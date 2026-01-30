@@ -456,7 +456,7 @@ footer {
     background: var(--panel-bg);
     border: 1px solid var(--glass-border);
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,23 +466,23 @@ footer {
 }
 
 .team-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .team-logo {
-    height: 60px;
+    height: 50px;
     width: auto;
     object-fit: contain;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
 }
 
 .drivers-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .driver {
@@ -493,11 +493,11 @@ footer {
 }
 
 .image-wrapper {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     background: rgba(255, 255, 255, 0.05);
     /* Liquid glass effect base */
     backdrop-filter: blur(5px);
@@ -525,15 +525,15 @@ footer {
 .driver-name {
     width: 100%;
     text-align: center;
-    padding: 0.5rem 0.2rem;
-    font-size: 0.9rem;
+    padding: 0.4rem 0.2rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 6px;
     letter-spacing: 0.5px;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.2;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /* Team Colors & Name Tags */
