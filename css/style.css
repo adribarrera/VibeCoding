@@ -37,7 +37,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 800;
     letter-spacing: -1px;
     text-transform: uppercase;
@@ -162,7 +164,8 @@ section {
 .hero-content {
     z-index: 10;
     position: relative;
-    margin-bottom: -5%; /* Visual overlap */
+    margin-bottom: -5%;
+    /* Visual overlap */
 }
 
 .btn-primary {
@@ -331,20 +334,38 @@ footer {
     width: 100%;
     border-radius: 1rem;
     /* Blend mode for engineering images to look integrated */
-    mix-blend-mode: screen; 
+    mix-blend-mode: screen;
 }
 
 /* Animations Classes */
-.fade-in, .fade-in-up, .slide-in-left, .slide-in-right, .scale-in {
+.fade-in,
+.fade-in-up,
+.slide-in-left,
+.slide-in-right,
+.scale-in {
     opacity: 0;
     transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.fade-in { transform: translateY(0); }
-.fade-in-up { transform: translateY(50px); }
-.slide-in-left { transform: translateX(-50px); }
-.slide-in-right { transform: translateX(50px); }
-.scale-in { transform: scale(0.9); }
+.fade-in {
+    transform: translateY(0);
+}
+
+.fade-in-up {
+    transform: translateY(50px);
+}
+
+.slide-in-left {
+    transform: translateX(-50px);
+}
+
+.slide-in-right {
+    transform: translateX(50px);
+}
+
+.scale-in {
+    transform: scale(0.9);
+}
 
 .in-view {
     opacity: 1;
@@ -356,19 +377,29 @@ footer {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-    .grid-2, .grid-2-reverse {
+
+    .grid-2,
+    .grid-2-reverse {
         grid-template-columns: 1fr;
         gap: 3rem;
         text-align: center;
     }
-    
+
     .grid-2-reverse {
         display: flex;
         flex-direction: column-reverse;
@@ -389,11 +420,11 @@ footer {
     .hero-content {
         margin-bottom: 2rem;
     }
-    
+
     .stats-list {
         justify-content: center;
     }
-    
+
     .circuit-stats {
         justify-content: center;
     }
@@ -401,9 +432,194 @@ footer {
     .stat-row {
         justify-content: center;
     }
-    
+
     .feature-cards {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Drivers Section */
+.section-drivers {
+    background: var(--dark-bg);
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.team-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.team-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+.drivers-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+}
+
+.driver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.image-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    /* Liquid glass effect base */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.driver img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.3s;
+}
+
+.team-card:hover .image-wrapper {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.driver:hover img {
+    transform: scale(1.1);
+}
+
+.driver-name {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Team Colors & Name Tags */
+
+/* Ferrari */
+.ferrari .driver-name {
+    background-color: #FF2800;
+    /* Ferrari Red */
+    color: white;
+}
+
+/* Mercedes */
+.mercedes .driver-name {
+    background-color: #00A19B;
+    /* Mercedes Petrol Green */
+    color: black;
+}
+
+/* Red Bull */
+.redbull .driver-name {
+    background-color: #061939;
+    /* Dark Blue */
+    color: #FCD800;
+    /* Yellow */
+}
+
+/* McLaren */
+.mclaren .driver-name {
+    background-color: #FF8000;
+    /* Papaya Orange */
+    color: black;
+}
+
+/* Aston Martin */
+.astonmartin .driver-name {
+    background-color: #006F62;
+    /* British Racing Greenish */
+    color: white;
+}
+
+/* Williams */
+.williams .driver-name {
+    background-color: #041E42;
+    /* Williams Blue */
+    color: white;
+}
+
+/* Alpine */
+.alpine .driver-name {
+    background-color: #FD4BC7;
+    /* Alpine Pink */
+    color: #0090FF;
+    /* Alpine Blue text */
+}
+
+/* Haas */
+.haas .driver-name {
+    background-color: white;
+    color: #F42525;
+    /* Haas Red */
+}
+
+/* Racing Bulls */
+.racingbulls .driver-name {
+    background-color: white;
+    color: #1634CB;
+    /* Racing Bulls Blue */
+}
+
+/* Audi */
+.audi .driver-name {
+    background-color: #C0C0C0;
+    /* Silver */
+    color: #FF4D00;
+    /* Audi Orange - NOT too light */
+}
+
+/* Cadillac */
+.cadillac .driver-name {
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+}
+
+@media (min-width: 1100px) {
+    .teams-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
