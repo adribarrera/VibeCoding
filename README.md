@@ -86,5 +86,15 @@ Debes de ajustar bien la sección de pilotos. Hay algunos nombres que se cortan.
 ## Cuarto prompt:
 Pilotos como Fernando Alonso, Oliver Bearman, Charles Leclerc deben de ajustarse para que el recuadro sea de una única línea y no de un salto entre el nombre y el apellido. Debes ajustar eso sin que se corte el texto.
 
+--
+
+## Quinto prompt:
+Debes añadir un acceso directo en el menú superior para la sección de pilotos. Debes de actualizar la foto de "hero-car" por la que encontrarás como "Prototipo". Debes de incluir el logo "F1Logo" a la izquierda del texto del banner superior "F1 2026". Debes cambiar la imagen "madrid-circuit" por "circuitomadrid".
+
+Debes ajustar el tamañdo de cada imagen según sea conveniente. Además debes de buscar algo de introducción para incluir en la imagen principal "Prototipo"
+
+Todas estas imágenes nuevas están en: carpeta ImgReales dentro de assets.
+
+
 
 
