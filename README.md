@@ -95,6 +95,10 @@ Debes ajustar el tamañdo de cada imagen según sea conveniente. Además debes d
 
 Todas estas imágenes nuevas están en: carpeta ImgReales dentro de assets.
 
+--
+
+## Sexto prompt:
+Debes de cambiar la posicion del acceso directo del nav de Pilotos con la de Circuito. Y la introducción del prinicipio de la página, la has cortado por la parte superior. Ponlo en un suave recuadro justo debajo de la imagen "Prototipo"
 
 
 
