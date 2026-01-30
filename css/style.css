@@ -186,10 +186,14 @@ section {
 
 /* Hero */
 .section-hero {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding-top: 120px;
+    /* Account for fixed header */
+    padding-bottom: 4rem;
 }
 
 .hero-content {
