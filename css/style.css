@@ -68,16 +68,26 @@ p {
     max-width: 60ch;
 }
 
-.intro-text {
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
-    max-width: 70ch;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
+.intro-box {
+    background: rgba(21, 21, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.intro-text strong {
+.intro-box p {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    color: var(--text-gray);
+    max-width: none;
+}
+
+.intro-box strong {
     color: white;
 }
 
