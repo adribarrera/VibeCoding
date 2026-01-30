@@ -81,5 +81,10 @@ Cadillac: Checo Pérez, Valtteri Bottas
 ## Tercer prompt:
 Debes de ajustar bien la sección de pilotos. Hay algunos nombres que se cortan. Debes agrandar los cuadros donde están los pilotos o reducir un poco esos elementos y centrarlos bien, ya que algunos nombres se extienden demasiado a la derecha.
 
+--
+
+## Cuarto prompt:
+Pilotos como Fernando Alonso, Oliver Bearman, Charles Leclerc deben de ajustarse para que el recuadro sea de una única línea y no de un salto entre el nombre y el apellido. Debes ajustar eso sin que se corte el texto.
+
 
 
